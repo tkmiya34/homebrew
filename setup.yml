@@ -1,0 +1,69 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  vars:
+    homebrew_packages_taps:
+      - homebrew/binary
+      - homebrew/dupes
+      - homebrew/versions
+    homebrew_packages_packages:
+      - { name: zsh }
+      - { name: vim }
+      - { name: git }
+      - { name: tig }
+      - { name: hub }
+      - { name: tree }
+      - { name: jq }
+      - { name: curl }
+      - { name: wget }
+      - { name: dnsmasq }
+      - { name: nkf }
+      - { name: heroku }
+      - { name: readline }
+      - { name: node }
+      - { name: redis }
+      - { name: jenkins }
+      - { name: rbenv }
+      - { name: ruby-build }
+      - { name: rbenv-gemset }
+      - { name: rbenv-gem-rehash }
+      - { name: phpenv }
+      - { name: php-build }
+    homebrew_cask_packages_taps:
+      - phinze/homebrew-cask
+      - josegonzalez/homebrew-php
+      - caskroom/homebrew-versions
+    homebrew_cask_packages_packages:
+      - iterm2
+      - alfred
+      - dash
+      - skitch
+      - evernote
+      - dropbox
+      - skype
+      - sourcetree
+      - mysqlworkbench
+      - sequel-pro
+      - firefox
+      - kobito
+      - virtualbox
+      - vagrant
+      - phpstorm
+      - eclipse-ide
+      - the-unarchiver
+      - imageoptim
+      - speedlimit
+      - colors
+      - sitesucker
+      - flash
+      - google-japanese-ime
+      - google-drive
+      - mou
+      - fluid
+      - mailbox
+      - sublime-text3
+      - atom
+  roles:
+    - hnakamur.homebrew-packages
+    - hnakamur.homebrew-cask-packages
