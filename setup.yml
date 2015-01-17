@@ -30,6 +30,7 @@
       - { name: rbenv-gem-rehash }
       - { name: phpenv }
       - { name: php-build }
+      - { name: gibo }
     homebrew_cask_packages_taps:
       - phinze/homebrew-cask
       - josegonzalez/homebrew-php
@@ -64,6 +65,7 @@
       - mailbox
       - sublime-text3
       - atom
+      - tower
   roles:
     - hnakamur.homebrew-packages
     - hnakamur.homebrew-cask-packages
