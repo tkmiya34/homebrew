@@ -4,7 +4,7 @@
 ```
 brew doctor
 
-brew tap Homebrew/brewdler
+brew tap Homebrew/bundle
 
-brew brewdle
+brew bundle
 ```
