@@ -2,5 +2,10 @@
 [homebrew](http://brew.sh)
 
 ```
-brew bundle
+# Restore
+ln -s Brewfile ~/.Brewfile
+brew bundle --global
+
+# Dump
+brew bundle dump --force
 ```
